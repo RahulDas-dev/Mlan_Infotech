@@ -12,7 +12,11 @@ html {
 body {
     @apply antialiased font-body;
 }
-  
+
+.theme_col_hex_code{
+    color: #9ba0c7;
+}
+
 .orange {
     color: #ff8800;
 }
