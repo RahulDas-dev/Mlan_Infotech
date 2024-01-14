@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{pagetitle}}</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="Description" CONTENT="Mlan Infotech Provides solution for Low Voltage Electrical Appliance Like CCTV Fire Alarm Access Control Building Management, Category: Low Voltage Electrical 
+    Appliance survice installtion and Maintenance">
+    <meta name="robots" content="index, follow"/>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height,
+                                   initial-scale=1.0, user-scalable=no,
+                                   minimum-scale=1.0, maximum-scale=1.0,
+                                   target-densitydpi=device-dpi"
+    />
+    <meta name="theme-color" content="#f3f4f6"/>
+    <meta name="title" content="Mlan Infotech &amp; Provides solution for Low Voltage Electrical Appliance Like CCTV Fire Alarm Access Control Building Management"/>
+    <meta name="keywords" content="CCTV, Fire Alarm, Access Management, Building Management, Low Power Electrical Appliance, Fan, Motor, Calling bell">
+    <meta name="google-site-verification" content="XjmXDBF-auQLTkUvaDuuwW7iwUtKUZgUUXgsSjbsr8E" />
+    <link rel="canonical" href="https://www.mlaninfotech.com"/>
+    <link rel="shotcut icon" type="image/png" href="./public/favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mlaninfotech.com"/>
+    <meta property="og:title" content="Mlan Infotech | Redesigned Low Voltage Electrical Appliances With Innovations, Security & Safty measures" />
+    <meta property="og:description" content="Mlan Infotech Provides solution for Low Voltage Electrical Appliance Like CCTV Fire Alarm Access Control Building Management" />
+    <meta property="og:image" content="./public/logo256.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <script type="module" src="/src/index.ts"></script> 
+  </head>
+  <style>
+    @media (max-width: 800px) {
+      .responsive-image { 
+        background-size: auto; 
+        background-position: top center;
+        background-image: url(src/images/background_mob.png);
+        filter: blur(3px);
+        filter: grayscale(50%);
+        filter: opacity(0.8);
+      }
+    }
+    @media (min-width: 1025px) {
+      .responsive-image { 
+        background-size: cover; 
+        background-position: center center;
+        background-image: url(src/images/background.png) ;
+        filter: blur(1px);
+        filter: grayscale(50%);
+        filter: opacity(0.8);
+      }
+      
+    }
+  </style>
+  <body>
+    {{>header}}
+    <main>
+        {{>section_1}}
+        {{>section_2}}
+        {{>section_3}}
+        {{>section_4}}
+        {{>section_5}}
+        {{>section_6}}
+        {{>section_7}}
+        {{>section_8}}
+        {{>section_9}}
+        {{>contact_form}}
+        {{>section_11}}
+        {{dialog_template}}
+        <div class="floating-btn-container" id="floating-contact" >
+            <a type="button" class="floating-btn" href="#contact" ><span>Contact Us</span></a>
+        </div>
+    </main>
+    {{>footer}}
+    <script>
+      const menubtn = document.querySelector("#menu_btn");
+      const menu = document.querySelector("#menu");
+      const burger = document.querySelector("#burger");
+      const cross = document.querySelector("#cross");
+
+      const version = '1.0.2'
+
+      /* 
+      Page Developed By Rahul Das
+      contact - 8097397804  
+      email - r.das699@gmail.com
+      */
+
+      menubtn && menubtn.addEventListener("click", () => {
+        if (burger.classList.contains("hidden")) {
+          burger.classList.remove("hidden");
+          cross.classList.add("hidden");
+        } else {
+          cross.classList.remove("hidden");
+          burger.classList.add("hidden");
+        }
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      });
+
+      const location_url = "https://goo.gl/maps/zLLTfGFQrCNdkMwK9";
+
+      const mapbtn = document.querySelector("#map_btn");
+
+      mapbtn && mapbtn.addEventListener("click", () => {
+        window.open(location_url, "_blank").focus();
+      });
+
+      const fblink = 'https://www.facebook.com/mlaninfotech2021'
+
+      const fbclick = function(){
+        window.open(fblink, "_blank").focus();
+      }
+
+      const instalink = 'https://www.instagram.com/mlaninfotech'
+
+      const instaclick = function(){
+        window.open(instalink, "_blank").focus();
+      }
+      const twiterlink = 'https://www.twitter.com/MRITYUN25019338'
+
+      const twitterclick = function(){
+        window.open(twiterlink, "_blank").focus();
+      }
+    </script>
+  </body>
+</html>
